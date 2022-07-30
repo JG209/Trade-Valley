@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TradeValley.UI;
+using TradeValley.Misc;
 
 namespace TradeValley.Character
 {
@@ -64,6 +65,8 @@ namespace TradeValley.Character
             }
         }
         [SerializeField] private Stat energyUI;
+
+        private Vector3 min, max;// used to clamp the player position and avoid to get out of the map
         
 
         
@@ -72,6 +75,7 @@ namespace TradeValley.Character
             base.Awake();
             _energyValue = maxEnergyValue;
             energyUI.Initialize(maxEnergyValue, maxEnergyValue);
+            CameraFollow.ON_STAR_CAMERA += SetLimits; //Set the limits that the player can move
             
         }
 
@@ -90,7 +94,15 @@ namespace TradeValley.Character
         {
             base.FixedUpdate();
         }
+        void ClampPosition()
+        {
+            if(min == Vector3.zero || max == Vector3.zero){ //Avoid to run the clamp if theres no min or max position seted
+                Debug.LogWarning("No min or max player position seted");
+                return; 
+            }
 
+            transform.position = new Vector3(Mathf.Clamp(transform.position.x, min.x, max.x), Mathf.Clamp(transform.position.y, min.y, max.y), transform.position.z);
+        }
         void HandleInputs()
         {
             inputs.UpdateInputs();
@@ -110,6 +122,12 @@ namespace TradeValley.Character
                 IsAttacking = false;
 
             }
+        }
+
+        public void SetLimits(Vector3 min, Vector3 max)
+        {
+            this.min = min;
+            this.max = max;
         }
     }
 }
