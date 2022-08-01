@@ -2,8 +2,8 @@
 ## About the project
 This project was made to a interview task using Unity and C#
 
-This game basically run around collecting apples in trees, them sell for money in the shop, and use the money to buy outfits.
-Every time a apple is collected you lost energy, to recover energy you have to a potion in the shop.
+This game basically runs around collecting apples in trees, then selling them for money in the shop, and use the money to buy outfits. Every time an apple is collected you lose energy, to recover energy you have to buy a potion in the shop.
+
 Ps: The game is not well balanced now, and you will problably get enough money to buy everything in the shop before need to buy a potion to recover energy.
 
 [Click here to download the build](https://github.com/JG209/Trade-Valley/releases/tag/build)
