@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd1e7afa1a9abf04bbbabca4474a09c8, type: 3}
+  m_Name: Legs
+  m_EditorClassIdentifier: 
+  icon: {fileID: 21300000, guid: 0e85c7f2b2c931040b38304503d386c4, type: 3}
+  title: 
+  stackSize: 0
+  price: 16
+  armorType: 4
+  intellect: 0
+  strength: 0
+  stamina: 0
+  animationClips:
+  - {fileID: 7400000, guid: 1818877968638c5488c87542b006b53c, type: 2}
+  - {fileID: 7400000, guid: ebcbb371957ee184887f77808a8106e5, type: 2}
+  - {fileID: 7400000, guid: 45dfea6246329c5479ac91ebd23f6357, type: 2}
+  - {fileID: 7400000, guid: 1b83bf0ef0a03ed41812c8c45ebb3034, type: 2}
+  - {fileID: 7400000, guid: c0299dcde56c24c4e81efae4aa5f3db0, type: 2}
+  - {fileID: 7400000, guid: 5931b0a245e4c8b4fb8220cb7e59a637, type: 2}
+  - {fileID: 7400000, guid: 320d092e1ccaa1f4a8aceea9a40687ea, type: 2}
+  - {fileID: 7400000, guid: 4ad27b15877f05f4d98c835c955ac89e, type: 2}
+  - {fileID: 7400000, guid: 73b164745957c704fba29a146f8457d5, type: 2}
+  - {fileID: 7400000, guid: 7542fe41cc86a0148a6fcf21d1f20a69, type: 2}
+  - {fileID: 7400000, guid: 1f12130fd0e47644db1bbd5a25312e9d, type: 2}
+  - {fileID: 7400000, guid: 7157bddaeaeb8314d92e068498409363, type: 2}
+  visual: {fileID: 21300000, guid: 3bf9b677a3da27c45b59710283031bc7, type: 3}

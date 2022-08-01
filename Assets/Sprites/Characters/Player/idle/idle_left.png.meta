@@ -131,10 +131,10 @@ TextureImporter:
       name: idle_left_0
       rect:
         serializedVersion: 2
-        x: 154
-        y: 1578
-        width: 192
-        height: 353
+        x: 0
+        y: 1536
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,10 +152,10 @@ TextureImporter:
       name: idle_left_1
       rect:
         serializedVersion: 2
-        x: 666
-        y: 1578
-        width: 192
-        height: 355
+        x: 512
+        y: 1536
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -173,10 +173,10 @@ TextureImporter:
       name: idle_left_2
       rect:
         serializedVersion: 2
-        x: 1178
-        y: 1578
-        width: 192
-        height: 357
+        x: 1024
+        y: 1536
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -194,10 +194,10 @@ TextureImporter:
       name: idle_left_3
       rect:
         serializedVersion: 2
-        x: 1690
-        y: 1578
-        width: 192
-        height: 358
+        x: 1536
+        y: 1536
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -215,10 +215,10 @@ TextureImporter:
       name: idle_left_4
       rect:
         serializedVersion: 2
-        x: 154
-        y: 1066
-        width: 192
-        height: 360
+        x: 0
+        y: 1024
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -236,10 +236,10 @@ TextureImporter:
       name: idle_left_5
       rect:
         serializedVersion: 2
-        x: 666
-        y: 1066
-        width: 192
-        height: 362
+        x: 512
+        y: 1024
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -257,10 +257,10 @@ TextureImporter:
       name: idle_left_6
       rect:
         serializedVersion: 2
-        x: 1178
-        y: 1066
-        width: 192
-        height: 361
+        x: 1024
+        y: 1024
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -278,10 +278,10 @@ TextureImporter:
       name: idle_left_7
       rect:
         serializedVersion: 2
-        x: 1690
-        y: 1066
-        width: 192
-        height: 359
+        x: 1536
+        y: 1024
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -299,10 +299,10 @@ TextureImporter:
       name: idle_left_8
       rect:
         serializedVersion: 2
-        x: 154
-        y: 554
-        width: 192
-        height: 357
+        x: 0
+        y: 512
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -320,10 +320,10 @@ TextureImporter:
       name: idle_left_9
       rect:
         serializedVersion: 2
-        x: 666
-        y: 554
-        width: 192
-        height: 356
+        x: 512
+        y: 512
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -341,10 +341,10 @@ TextureImporter:
       name: idle_left_10
       rect:
         serializedVersion: 2
-        x: 1178
-        y: 554
-        width: 192
-        height: 354
+        x: 1024
+        y: 512
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -362,10 +362,10 @@ TextureImporter:
       name: idle_left_11
       rect:
         serializedVersion: 2
-        x: 1690
-        y: 554
-        width: 192
-        height: 353
+        x: 1536
+        y: 512
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

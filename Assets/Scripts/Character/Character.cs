@@ -70,7 +70,7 @@ namespace TradeValley.Character
         /// Set the x and y paramater, and makes the animation faces the rigth side
         /// </summary>
         /// <param name="direction">The direction vector</param>
-        public void HandleAnimation(Vector2 direction)
+        public virtual void HandleAnimation(Vector2 direction)
         {
             //Check if the player is standing still to control his walk animation
             if(IsMoving)
@@ -86,16 +86,12 @@ namespace TradeValley.Character
             }
             else
                 ActivateLayer("Idle_Layer");
-
-
-            
-            
         }
         /// <summary>
         /// Deactivate all the animator layers before activating another
         /// </summary>
         /// <param name="layerName">The layer to be activated</param>
-        public void ActivateLayer(string layerName)
+        public virtual void ActivateLayer(string layerName)
         {
             for (int i = 0; i < animator.layerCount; i++)
             {

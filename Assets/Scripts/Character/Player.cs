@@ -8,6 +8,20 @@ namespace TradeValley.Character
 {
     public class Player : Character
     {
+        private static Player instance;
+
+        public static Player MyInstance
+        {
+            get
+            {
+                if (instance == null)
+                {
+                    instance = FindObjectOfType<Player>();
+                }
+
+                return instance;
+            }
+        }
         #region Input Class
         [System.Serializable]
         public class InputManager
@@ -45,7 +59,19 @@ namespace TradeValley.Character
         #endregion
         [SerializeField] private float maxEnergyValue = 100;
         [SerializeField] private float _energyValue;
-        private float EnergyValue
+        [SerializeField] private int money;
+
+        public int MyMoney
+        {
+            get => money;
+            set 
+            {
+                money = value;
+                UIManager.MyInstance.moneyTxt.text = $"My Money: {money}";
+            }
+        }
+
+        public float EnergyValue
         {
             get => _energyValue;
             set
@@ -64,25 +90,23 @@ namespace TradeValley.Character
                 energyUI.MyCurrentValue = _energyValue;
             }
         }
+        public float MyMaxEnergyValue {get => maxEnergyValue;}
         [SerializeField] private Stat energyUI;
 
         private Vector3 min, max;// used to clamp the player position and avoid to get out of the map
         
-
+        [SerializeField] private GearSocket[] gearSockets;
         
         protected override void Awake()
         {
             base.Awake();
+            UIManager.MyInstance.moneyTxt.text = $"My Money: {money}";
             _energyValue = maxEnergyValue;
             energyUI.Initialize(maxEnergyValue, maxEnergyValue);
             CameraFollow.ON_STAR_CAMERA += SetLimits; //Set the limits that the player can move
             
         }
 
-        protected override void Start()
-        {
-            base.Start();
-        }
 
         protected override void Update()
         {
@@ -107,8 +131,17 @@ namespace TradeValley.Character
         {
             inputs.UpdateInputs();
             moveDirection = inputs.direction;
-            if(inputs.attack)
+            if(inputs.attack && !IsAttacking)
                 attackRoutine = StartCoroutine(Attack());
+
+            if(IsMoving)
+            {
+                foreach (GearSocket gs in gearSockets)
+                {
+                    gs.MyAnimator.SetBool("attack", IsAttacking);
+                }
+            }
+
         }
 
         protected override IEnumerator Attack()
@@ -116,9 +149,13 @@ namespace TradeValley.Character
             if(!IsAttacking && !IsMoving)
             {
                 IsAttacking = true;
+                foreach (GearSocket gs in gearSockets)
+                {
+                    gs.MyAnimator.SetBool("attack", IsAttacking);
+                }
                 EnergyValue -= 10f;
                 yield return new WaitForSeconds(0.5f);
-                Debug.Log("Done Attacking");
+                // Debug.Log("Done Attacking");
                 IsAttacking = false;
 
             }
@@ -129,5 +166,28 @@ namespace TradeValley.Character
             this.min = min;
             this.max = max;
         }
+
+        public override void HandleAnimation(Vector2 direction)
+        {
+            base.HandleAnimation(direction);
+            if(IsMoving)
+            {
+                foreach (GearSocket gs in gearSockets)
+                {
+                    gs.SetXAndY(direction.x, direction.y);
+                }
+            }
+        }
+
+        public override void ActivateLayer(string layerName)
+        {
+            base.ActivateLayer(layerName);
+            foreach (GearSocket gs in gearSockets)
+            {
+                gs.ActivateLayer(layerName);
+            }
+        }
+
+        
     }
 }

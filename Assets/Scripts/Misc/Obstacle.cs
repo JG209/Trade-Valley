@@ -56,22 +56,5 @@ namespace TradeValley.Misc
             MySpriteRenderer.color = defaultColor;
         }
 
-        public void OnTriggerEnter2D(Collider2D collision)
-        {
-            if (collision.name == "WallHack")
-            {
-                FadeOut();
-            }
-        }
-
-        public void OnTriggerExit2D(Collider2D collision)
-        {
-            if (collision.name == "WallHack")
-            {
-                FadeIn();
-            }
-
-        }
-
     }
 }

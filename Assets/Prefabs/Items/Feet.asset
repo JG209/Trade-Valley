@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd1e7afa1a9abf04bbbabca4474a09c8, type: 3}
+  m_Name: Feet
+  m_EditorClassIdentifier: 
+  icon: {fileID: 21300000, guid: a0a5d1ba4b567384d9cfd3ac7ca752a1, type: 3}
+  title: 
+  stackSize: 0
+  price: 10
+  armorType: 5
+  intellect: 0
+  strength: 0
+  stamina: 0
+  animationClips:
+  - {fileID: 7400000, guid: 0f85757ddd49e8d4882d073ef4706c98, type: 2}
+  - {fileID: 7400000, guid: ddecd4a54fc54c6408aff96e26e7efe7, type: 2}
+  - {fileID: 7400000, guid: 9846b8b7ae10e6f4ca19faaa15effa88, type: 2}
+  - {fileID: 7400000, guid: ff113e1d14c0a3e4285b6e6827827562, type: 2}
+  - {fileID: 7400000, guid: c0a7acd0f03851a41b8e07cbd9b5fcb1, type: 2}
+  - {fileID: 7400000, guid: 5ec01040a7c58504ab0c06a4fc0ebd96, type: 2}
+  - {fileID: 7400000, guid: 29a9e42e21503474d98e1c094cce6448, type: 2}
+  - {fileID: 7400000, guid: 2bf0980a07f4769479474d906f1a8ec9, type: 2}
+  - {fileID: 7400000, guid: f5b0afcc7b3055045ae81f61734af31b, type: 2}
+  - {fileID: 7400000, guid: fce583d315fd0fd40bfeb431cf5c2302, type: 2}
+  - {fileID: 7400000, guid: cd013ff47ee5d514f82d53edb3f51b78, type: 2}
+  - {fileID: 7400000, guid: e33daa59ce0a632409cba066b60dbf2d, type: 2}
+  visual: {fileID: 21300000, guid: 4a1452875921f0841bea0f4cb8f9b421, type: 3}

@@ -131,10 +131,10 @@ TextureImporter:
       name: walk_back_0
       rect:
         serializedVersion: 2
-        x: 115
-        y: 3619
-        width: 262
-        height: 362
+        x: 0
+        y: 3584
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,10 +152,10 @@ TextureImporter:
       name: walk_back_1
       rect:
         serializedVersion: 2
-        x: 623
-        y: 3619
-        width: 266
-        height: 366
+        x: 512
+        y: 3584
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -173,10 +173,10 @@ TextureImporter:
       name: walk_back_2
       rect:
         serializedVersion: 2
-        x: 1133
-        y: 3619
-        width: 268
-        height: 370
+        x: 1024
+        y: 3584
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -194,10 +194,10 @@ TextureImporter:
       name: walk_back_3
       rect:
         serializedVersion: 2
-        x: 1641
-        y: 3619
-        width: 272
-        height: 374
+        x: 1536
+        y: 3584
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -215,10 +215,10 @@ TextureImporter:
       name: walk_back_4
       rect:
         serializedVersion: 2
-        x: 101
-        y: 3107
-        width: 276
-        height: 378
+        x: 0
+        y: 3072
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -236,10 +236,10 @@ TextureImporter:
       name: walk_back_5
       rect:
         serializedVersion: 2
-        x: 617
-        y: 3107
-        width: 272
-        height: 376
+        x: 512
+        y: 3072
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -257,10 +257,10 @@ TextureImporter:
       name: walk_back_6
       rect:
         serializedVersion: 2
-        x: 1133
-        y: 3107
-        width: 268
-        height: 370
+        x: 1024
+        y: 3072
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -278,10 +278,10 @@ TextureImporter:
       name: walk_back_7
       rect:
         serializedVersion: 2
-        x: 1647
-        y: 3107
-        width: 266
-        height: 366
+        x: 1536
+        y: 3072
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -299,10 +299,10 @@ TextureImporter:
       name: walk_back_8
       rect:
         serializedVersion: 2
-        x: 115
-        y: 2595
-        width: 262
-        height: 362
+        x: 0
+        y: 2560
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -320,10 +320,10 @@ TextureImporter:
       name: walk_back_9
       rect:
         serializedVersion: 2
-        x: 627
-        y: 2595
-        width: 262
-        height: 366
+        x: 512
+        y: 2560
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -341,10 +341,10 @@ TextureImporter:
       name: walk_back_10
       rect:
         serializedVersion: 2
-        x: 1141
-        y: 2595
-        width: 260
-        height: 370
+        x: 1024
+        y: 2560
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -362,10 +362,10 @@ TextureImporter:
       name: walk_back_11
       rect:
         serializedVersion: 2
-        x: 1655
-        y: 2595
-        width: 258
-        height: 374
+        x: 1536
+        y: 2560
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -383,10 +383,10 @@ TextureImporter:
       name: walk_back_12
       rect:
         serializedVersion: 2
-        x: 121
-        y: 2083
-        width: 256
-        height: 378
+        x: 0
+        y: 2048
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -404,10 +404,10 @@ TextureImporter:
       name: walk_back_13
       rect:
         serializedVersion: 2
-        x: 630
-        y: 2083
-        width: 259
-        height: 374
+        x: 512
+        y: 2048
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -425,10 +425,10 @@ TextureImporter:
       name: walk_back_14
       rect:
         serializedVersion: 2
-        x: 1141
-        y: 2083
-        width: 260
-        height: 370
+        x: 1024
+        y: 2048
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -446,10 +446,10 @@ TextureImporter:
       name: walk_back_15
       rect:
         serializedVersion: 2
-        x: 1651
-        y: 2083
-        width: 262
-        height: 366
+        x: 1536
+        y: 2048
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

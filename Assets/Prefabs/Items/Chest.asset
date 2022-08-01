@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd1e7afa1a9abf04bbbabca4474a09c8, type: 3}
+  m_Name: Chest
+  m_EditorClassIdentifier: 
+  icon: {fileID: 21300000, guid: 3cd08581838aa054594eaf3d8fe21750, type: 3}
+  title: 
+  stackSize: 0
+  price: 10
+  armorType: 2
+  intellect: 0
+  strength: 0
+  stamina: 0
+  animationClips:
+  - {fileID: 7400000, guid: 7100bad5adc806c42b22141f57b559bc, type: 2}
+  - {fileID: 7400000, guid: 66e74da6137369e4a8a0f8efef4de5f8, type: 2}
+  - {fileID: 7400000, guid: 12e08b9b687e6154ca8fcc45ea876875, type: 2}
+  - {fileID: 7400000, guid: 05951e091e0bb9a4eb02a3c302892813, type: 2}
+  - {fileID: 7400000, guid: 767e9b68f4cb4ee4c949fca877fdb5e6, type: 2}
+  - {fileID: 7400000, guid: f478fe575f9cc784e8b298ce728ff799, type: 2}
+  - {fileID: 7400000, guid: 190814e0162323e4498ed12cc1ce8cee, type: 2}
+  - {fileID: 7400000, guid: 678e0aaddd38a504cb9c3c0aa970a8bb, type: 2}
+  - {fileID: 7400000, guid: e10c00296469b0348b9a48764b37777a, type: 2}
+  - {fileID: 7400000, guid: fb884d89699894a4a9dd0ba823e821b9, type: 2}
+  - {fileID: 7400000, guid: bb0f277e4b5d6bc46991c51b567f0c72, type: 2}
+  - {fileID: 7400000, guid: 9094671aa7c3ad0448ae3e3b3d78eb68, type: 2}
+  visual: {fileID: 21300000, guid: 448e7721ae357de4588d3a246e9df4f4, type: 3}
