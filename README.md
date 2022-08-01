@@ -24,7 +24,7 @@ Use WASD to move
 Go a tree anda press Space to start collect a apple
 ![image](https://user-images.githubusercontent.com/26046947/182228252-6ccc4abb-8582-4fa8-9e70-f09b660d062c.png)
 
-Open the inventory in the "i" key and go to the shopkeeper to the sell the apples
+Open the inventory in the "i" key and go to the shopkeeper to sell the apples
 ![image](https://user-images.githubusercontent.com/26046947/182228514-d4cc3874-72f1-436a-8908-1ce466bccb2c.png)
 
 Sell enough items to buy outfits
