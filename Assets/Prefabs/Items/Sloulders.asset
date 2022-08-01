@@ -15,11 +15,8 @@ MonoBehaviour:
   icon: {fileID: 21300000, guid: fc8af57a5fa055f48972bb0d03415f2c, type: 3}
   title: 
   stackSize: 0
-  price: 20
+  price: 12
   armorType: 1
-  intellect: 0
-  strength: 0
-  stamina: 0
   animationClips:
   - {fileID: 7400000, guid: 5197593daf238924d8aadf277d6fe79d, type: 2}
   - {fileID: 7400000, guid: 9091aed5f2ccd0b4f8ca2acdb6ac8f9b, type: 2}

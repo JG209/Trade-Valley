@@ -16,10 +16,7 @@ MonoBehaviour:
   title: 
   stackSize: 0
   price: 16
-  armorType: 4
-  intellect: 0
-  strength: 0
-  stamina: 0
+  armorType: 3
   animationClips:
   - {fileID: 7400000, guid: 1818877968638c5488c87542b006b53c, type: 2}
   - {fileID: 7400000, guid: ebcbb371957ee184887f77808a8106e5, type: 2}

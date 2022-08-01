@@ -44,6 +44,7 @@ namespace TradeValley.UI
 
         [SerializeField] private Button[] actionButtons;
         [SerializeField] private CharacterPanel charPanel;
+        [SerializeField] public CanvasGroup appleCollectedCanvasGroup;
         public TMP_Text moneyTxt;
         
         

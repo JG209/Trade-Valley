@@ -15,7 +15,7 @@ MonoBehaviour:
   icon: {fileID: 21300000, guid: 3cd08581838aa054594eaf3d8fe21750, type: 3}
   title: 
   stackSize: 0
-  price: 10
+  price: 20
   armorType: 2
   animationClips:
   - {fileID: 7400000, guid: 7100bad5adc806c42b22141f57b559bc, type: 2}

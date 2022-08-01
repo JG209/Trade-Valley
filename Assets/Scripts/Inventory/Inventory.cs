@@ -32,7 +32,7 @@ namespace TradeValley.Inventorys
 
         [SerializeField]private BagButton[] bagButtons;
 
-        [SerializeField] private Item[] items;
+        public Item[] items;
 
         public bool canAddBag{ get => bags.Count < 5; }
 
@@ -60,35 +60,36 @@ namespace TradeValley.Inventorys
             OpenClose();
         }
 
-        void Update()
-        {
-            //---------DEBUG
-            if(Input.GetKeyDown(KeyCode.J))
-            {
-                Bag bag = (Bag)Instantiate(items[0]);
-                bag.Initialize(20);
-                bag.Use();
-            }
-            if(Input.GetKeyDown(KeyCode.K))
-            {
-                Bag bag = (Bag)Instantiate(items[0]);
-                bag.Initialize(20);
-                AddItem(bag);
-            }
-            if(Input.GetKeyDown(KeyCode.L))
-            {
-                AddItem((Potion)Instantiate(items[1]));
-                AddItem((Apple)Instantiate(items[8]));
-            }
-            if(Input.GetKeyDown(KeyCode.H))
-            {            
-                AddItem((Armor)Instantiate(items[2]));
-                AddItem((Armor)Instantiate(items[3]));
-                AddItem((Armor)Instantiate(items[4]));
-                AddItem((Armor)Instantiate(items[5]));
-                AddItem((Armor)Instantiate(items[7]));
-            }
-        }
+        //----------DEBUG
+        // void Update()
+        // {
+        //     if(Input.GetKeyDown(KeyCode.J))
+        //     {
+        //         Bag bag = (Bag)Instantiate(items[0]);
+        //         bag.Initialize(20);
+        //         bag.Use();
+        //     }
+        //     if(Input.GetKeyDown(KeyCode.K))
+        //     {
+        //         Bag bag = (Bag)Instantiate(items[0]);
+        //         bag.Initialize(20);
+        //         AddItem(bag);
+        //     }
+        //     if(Input.GetKeyDown(KeyCode.L))
+        //     {
+        //         AddItem((Potion)Instantiate(items[1]));
+        //         AddItem((Apple)Instantiate(items[8]));
+        //     }
+        //     if(Input.GetKeyDown(KeyCode.H))
+        //     {            
+        //         AddItem((Armor)Instantiate(items[2]));
+        //         AddItem((Armor)Instantiate(items[3]));
+        //         AddItem((Armor)Instantiate(items[4]));
+        //         AddItem((Armor)Instantiate(items[5]));
+        //         AddItem((Armor)Instantiate(items[7]));
+        //     }
+        // }
+
         public void AddBag(Bag bag)
         {
             foreach (BagButton bagButton in bagButtons)

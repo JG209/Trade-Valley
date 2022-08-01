@@ -10,12 +10,13 @@ using UnityEngine;
 
 namespace TradeValley.Misc
 {
-    public class LayerSorter : MonoBehaviour, IComparable
+    public class LayerSorter : MonoBehaviour
     {
         /// <summary>
         /// A reference to the players spriteRenderer
         /// </summary>
         [SerializeField]private SpriteRenderer[] renderers;
+        [SerializeField]private SpriteRenderer playerRenderer;
 
         //A list of all obstacles that the player is colliding with
         private List<Obstacle> obstacles = new List<Obstacle>();
@@ -40,16 +41,25 @@ namespace TradeValley.Misc
 
                 //Fades out the tree, so that we can see the player beheind it
                 o.FadeOut();
-                foreach (SpriteRenderer sr in renderers)
+                if (obstacles.Count == 0 || o.MySpriteRenderer.sortingOrder -1 < playerRenderer.sortingOrder)
                 {
-                    //If we aren't colliding with anything else or we are colliding with something with a less sort order
-                    if (obstacles.Count == 0 || o.MySpriteRenderer.sortingOrder -1 < sr.sortingOrder)
-                    {
-                        //Change the sortorder to be beheind what we just hit
-                        sr.sortingOrder = o.MySpriteRenderer.sortingOrder - 1;
-                    }
-                    
+                    //Change the sortorder to be beheind what we just hit
+                    playerRenderer.sortingOrder = o.MySpriteRenderer.sortingOrder - 10;
                 }
+                for (int i = 0; i < renderers.Length; i++)
+                {
+                    renderers[i].sortingOrder = playerRenderer.sortingOrder + i+1;
+                }
+                // foreach (SpriteRenderer sr in renderers)
+                // {
+                //     //If we aren't colliding with anything else or we are colliding with something with a less sort order
+                //     if (obstacles.Count == 0 || o.MySpriteRenderer.sortingOrder -1 < sr.sortingOrder)
+                //     {
+                //         //Change the sortorder to be beheind what we just hit
+                //         sr.sortingOrder = o.MySpriteRenderer.sortingOrder - 1;
+                //     }
+                    
+                // }
 
                 //Adds the obstacle to the list, so that we can keep track of it
                 obstacles.Add(o);
@@ -73,29 +83,39 @@ namespace TradeValley.Misc
                 o.FadeIn();
                 //Removes the obstacle from the list
                 obstacles.Remove(o);
-
-                foreach (SpriteRenderer sr in renderers)
+                //We don't have any other obstacles
+                if (obstacles.Count == 0)
                 {
-                    //We don't have any other obstacles
-                    if (obstacles.Count == 0)
-                    {
-                        sr.sortingOrder = 200;
-                    }
-                    else//We have other obstacles and we need to change the sortorder based on those obstacles.
-                    {
-                        CompareTo(obstacles);
-                        obstacles.Sort();
-                        sr.sortingOrder = obstacles[0].MySpriteRenderer.sortingOrder - 1;
-                    }
+                    playerRenderer.sortingOrder = 200;
                 }
+                else//We have other obstacles and we need to change the sortorder based on those obstacles.
+                {
+                    
+                    obstacles.Sort();
+                    playerRenderer.sortingOrder = obstacles[0].MySpriteRenderer.sortingOrder - 10;
+                }
+                for (int i = 0; i < renderers.Length; i++)
+                {
+                    renderers[i].sortingOrder = playerRenderer.sortingOrder + i + 1;
+                }
+                // foreach (SpriteRenderer sr in renderers)
+                // {
+                //     //We don't have any other obstacles
+                //     if (obstacles.Count == 0)
+                //     {
+                //         sr.sortingOrder = 200;
+                //     }
+                //     else//We have other obstacles and we need to change the sortorder based on those obstacles.
+                //     {
+                        
+                //         obstacles.Sort();
+                //         sr.sortingOrder = obstacles[0].MySpriteRenderer.sortingOrder - 1;
+                //     }
+                // }
             
             }
         }
 
-        public int CompareTo(object obj)
-        {
-            
-            return 1;
-        }
+        
     }
 }

@@ -56,7 +56,7 @@ namespace TradeValley.Character
 
             }
         }
-        [SerializeField] private InputManager inputs = new InputManager();
+        public InputManager inputs = new InputManager();
         #endregion
         [SerializeField] private float maxEnergyValue = 100;
         [SerializeField] private float _energyValue;
@@ -132,8 +132,8 @@ namespace TradeValley.Character
         {
             inputs.UpdateInputs();
             moveDirection = inputs.direction;
-            if(inputs.attack && !IsAttacking)
-                attackRoutine = StartCoroutine(Attack());
+            // if(inputs.attack && !IsAttacking) //Not being used
+            //     attackRoutine = StartCoroutine(Attack());
 
             if(IsMoving)
             {
