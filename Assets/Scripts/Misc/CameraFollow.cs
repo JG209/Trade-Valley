@@ -19,6 +19,7 @@ namespace TradeValley.Misc
 
         void Start()
         {
+            Screen.SetResolution(1920,1080, true);
             target = GameObject.FindGameObjectWithTag("Player").transform;
             
             cam = Camera.main;

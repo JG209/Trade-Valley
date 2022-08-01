@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TradeValley.Character;
 using TradeValley.UI;
+using TradeValley.DialogueSystem;
 
 namespace TradeValley
 {
@@ -13,9 +14,14 @@ namespace TradeValley
         public ShopItem[] MyItems { get => items; }
 
         [SerializeField] private ShopWindown shopWindown;
+        [SerializeField] private DialogueStarter dialogueStarter;
+
+        private bool isPlayerInsedeShopArea = false;
         
         public void Interact()
         {
+            if(!isPlayerInsedeShopArea) return;
+            
             shopWindown.CreatePage(items);
             shopWindown.Open();
         }
@@ -30,7 +36,8 @@ namespace TradeValley
         {
             if(other.gameObject.GetComponent<Player>() != null)
             {
-                Interact();
+                dialogueStarter.InitiateDialogue();
+                isPlayerInsedeShopArea = true;
             }
         }
 
@@ -38,6 +45,7 @@ namespace TradeValley
         {
             if(other.gameObject.GetComponent<Player>() != null)
             {
+                isPlayerInsedeShopArea = false;
                 StopInteract();
             }
         }
